@@ -3,8 +3,9 @@
 el número en la posición i es múltiplo de 7, acumularlo en una
 suma e imprimir el resultado */
 
+#include <stdlib.h> // Se necesita para poder generar numero aleatorio
 #include <iostream>
-#include <time.h>
+#include <time.h> // Se necesita para poder generar numero aleatorio
 
 
 using namespace std;
@@ -13,7 +14,7 @@ int main(){
     int num=0, sum=0;
     int array[15];
 
-    srand(time(NULL));
+    srand(time(NULL)); // Genera numero aleatorio
     num=rand();
 
     cout<<"Multiplos de 7 en el arreglo son:"<<endl;
