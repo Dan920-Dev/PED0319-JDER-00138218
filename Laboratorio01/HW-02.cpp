@@ -7,16 +7,21 @@ solamente contiene letras */
 #include <string> // Libreria para cadena de caracteres
 using namespace std;
 
-void Evaluating(string *);
+void Evaluating(char *, char *);
 
 int main(){
-    string letter="";
+    char letter[10];
+    char character[]={'1' ,'2' ,'3','4' ,'5' ,'6' ,'7' ,'8' ,'9' ,'0'};
     
     cout<<"Digite una cadena de caracteres"<<endl;
-    cin>>letter;
+    cin>>letter[10];
 
+    Evaluating(letter, character);
     return 0;
 }
 
-void Evaluating(string *chain){
+void Evaluating(char *a, char *b){
+    for(int i=0;i<10;i++){
+        for(int j=0;j<10;j++)
+    }
 }
