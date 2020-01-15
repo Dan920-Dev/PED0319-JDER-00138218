@@ -21,6 +21,10 @@ int main(){
         cout<<endl;
     }
 
+    ver(*array, size);
+
 
     return 0;
 }
+
+
