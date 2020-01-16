@@ -20,10 +20,7 @@ int main(){
         cin.ignore();
         cout<<endl;
     }
-
-    ver(*array, size);
-
-
+    
     return 0;
 }
 
