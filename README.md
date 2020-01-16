@@ -24,4 +24,5 @@
 ### Dificultades en ejercicio de tareas
 
 * Ejercicio aveces extensos, tomando en cuenta que tenemos tarea extra de la clase
-* 
+* Como usar el getline correctamente
+
