@@ -1,25 +1,21 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-struct Address{
-    int houyseNumber;
-    string city, state;
-};
-
-struct personalInfo{
-    Address personalAddress;
-    string name;
-    int age;
-};
+long  int factorial(int n);
 
 int main(){
-    personalInfo p1;
+    int n;
+    cout<< "Digite el numero del factorial que desea: "<<endl; cin>>n;
+    cout<<factorial(n);
+    cout<<endl;
 
-    cout << "Nombre: "; cin >> p1.name;
-    cout << "Edad "; cin >> p1.age;
-    cout << "Ciudad: "; cin >> p1.personalAddress.city;
-    cout << "No. Casa: "; cin >> p1.personalAddress.houyseNumber;
-    cout << "Departamento: "; cin >> p1.personalAddress.state;
     return 0;
+}
+
+long  int factorial(int n){
+    if(n == 0 or n==1){
+        return 1;
+    }else{
+        return n*factorial(n-1);
+    }
 }
