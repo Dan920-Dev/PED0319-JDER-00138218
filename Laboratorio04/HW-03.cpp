@@ -32,9 +32,6 @@ int main(){
     if(op == 'v' or op == 'V'){
         cout << Sum(Array, size, 0, false);
     }
-
-    
-
     return 0;
 }
 

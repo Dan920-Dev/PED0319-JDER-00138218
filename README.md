@@ -26,3 +26,18 @@
 * Ejercicio aveces extensos, tomando en cuenta que tenemos tarea extra de la clase
 * Como usar el getline correctamente
 
+## Laboratorio 04
+
+### Observaciones al instructor
+
+* Explica muy bien el contenido.
+* Aveces avanza muy rapido
+* Es muy bueno que incentives a profundizar en las cosas y a correr los programas "a mano"
+
+
+### Dificultades en ejercicio de tareas
+
+* Ejercicio aveces extensos, tomando en cuenta que tenemos tarea extra de la clase
+* En el ultimo ejercicio se me complico la forma en como plantear la funcion recursiva 
+*
+
