@@ -39,5 +39,19 @@
 
 * Ejercicio aveces extensos, tomando en cuenta que tenemos tarea extra de la clase
 * En el ultimo ejercicio se me complico la forma en como plantear la funcion recursiva 
-*
+
+## Laboratorio 05
+
+### Observaciones al instructor
+
+* Explica muy bien el contenido.
+* Gracias por no dejar mucha tarea en este labo :)
+* Creo que es conveniente que expliques un ejercicio mas completo sobre pilas y registros
+
+
+### Dificultades en ejercicio de tareas
+
+* Aun se me cmplica el uso de pilas desde cero
+
+
 
