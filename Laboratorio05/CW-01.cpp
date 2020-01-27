@@ -1,39 +1,68 @@
-// Pila de cajas
-// peso, contenido, destino
 #include <iostream>
-#include <stack>
-#include <string>
 using namespace std;
 
-struct pack{
-    string content, address;
-    float weigth;
+struct node{
+    int n;
+    node* next;
 };
 
+typedef node* st;
 
-int main(){
-    int option = 0;
-    stack<pack> st;
-    pack aux;
-    do
-    {
-        cout << "Peso: "; cin >>aux.weigth; cin.ignore;
-        cout << "contenido: "; getline(cin, aux.content);
-        cout << "Destino "; getline(cin, aux.address);
+void initialize(st* s);
+void push(st* s, int n);
+int top(st* s);
+int pop(st* s);
 
-        st.push(aux);
+int main(void){
+    st s;
 
-        cout << "Desea ingresar mas datos: (1 = si, 0 = no\t"; cin >> option;
-        cin.ignore();
+    initialize(&s);
 
-    } while (option != 0);
+    push(&s, 5);
+    push(&s, 7);
+    push(&s, 4);
+    push(&s, 1);
 
-    aux = st.top();
+    cout << top(&s) << endl;
 
-    cout << "Peso: " << aux.weigth << endl;
-    cout << "Contenido: " << aux.content << endl;
-    cout << "Destino: " << aux.address << endl;
+    cout << pop(&s) << endl;
+    cout << pop(&s) << endl;
+    cout << pop(&s) << endl;
 
-    
+    cout << top(&s) << endl;
+
     return 0;
+}
+
+void initialize(st* s){
+    *s = NULL;
+}
+
+void push(st* s, int n){
+    node* newNode = new node;
+    newNode->n = n;
+    newNode->next = *s;
+
+    *s = newNode;
+}
+
+int top(st* s){
+    if(!(*s))
+        return -1;
+    else
+        return (*s)->n;
+}
+
+int pop(st* s){
+    if(!(*s))
+        return -1;
+    else{
+        int aux = (*s)->n;
+        *s = (*s)->next;
+        return aux;
+    }
+}
+
+bool isEmpty(st* s){
+    return *s == NULL;
 }
