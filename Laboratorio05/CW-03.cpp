@@ -23,7 +23,7 @@ int main(){
 
     do
     {
-        cout << "Peso: "; cin >> weigth; cin.ignore;
+        cout << "Peso: "; cin >> weigth; cin.ignore();
         cout << "contenido: "; getline(cin, content);
         cout << "Destino "; getline(cin, address);
 
